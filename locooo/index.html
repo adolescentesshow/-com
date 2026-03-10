@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#05050d" />
+    <meta name="description" content="Sistema de Gestión Musical — Adolescentes Show · Santa Cruz de la Sierra" />
+    <title>Adolescentes Show</title>
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- React + ReactDOM via CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <!-- Babel para transformar JSX en el navegador -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Pantalla de carga mientras Babel procesa el JSX -->
+      <div style="
+        display:flex;flex-direction:column;align-items:center;justify-content:center;
+        height:100vh;background:#05050d;color:#fff;gap:16px;font-family:sans-serif;">
+        <svg width="60" height="60" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#e8294a"/><stop offset="1" stop-color="#8b44f0"/>
+            </linearGradient>
+          </defs>
+          <rect width="44" height="44" rx="11" fill="url(#lg)"/>
+          <ellipse cx="21" cy="30" rx="8" ry="9.5" fill="white" fill-opacity=".9"/>
+          <rect x="19.8" y="6" width="2.4" height="17" rx="1.2" fill="white"/>
+          <rect x="18.8" y="9" width="4.4" height="1.2" rx=".6" fill="#ffbf00"/>
+          <rect x="18.8" y="12.5" width="4.4" height="1.2" rx=".6" fill="#ffbf00"/>
+          <circle cx="21" cy="30" r="2.5" fill="#05050d" fill-opacity=".65"/>
+        </svg>
+        <div style="font-size:22px;letter-spacing:4px;font-family:'Bebas Neue',sans-serif">ADOLESCENTES SHOW</div>
+        <div style="font-size:13px;color:#aaa;letter-spacing:2px">Cargando sistema...</div>
+      </div>
+    </div>
+
+    <!-- Aplicación principal (JSX transformado por Babel) -->
+    <script type="text/babel" src="app.js" data-presets="react"></script>
+  </body>
+</html>
